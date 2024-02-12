@@ -8,7 +8,7 @@ import com.squareup.moshi.JsonClass
 @JsonClass(generateAdapter = true)
 data class SearchResultDto(
     @Json(name = "Search")
-    val search: List<Search>,
+    val movies: List<Movie>,
     @Json(name = "totalResults")
     val totalResults: String,
     @Json(name = "Response")
@@ -16,5 +16,5 @@ data class SearchResultDto(
 )
 
 fun SearchResultDto.toSearchResult(): SearchResult {
-    return SearchResult(search = search)
+    return SearchResult(movies = movies)
 }

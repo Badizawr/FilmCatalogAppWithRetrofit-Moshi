@@ -1,8 +1,7 @@
 package com.example.filmcatalogappwithretrofitmoshi.domain.model
 
-import com.example.filmcatalogappwithretrofitmoshi.data.dto.Search
-import com.squareup.moshi.Json
+import com.example.filmcatalogappwithretrofitmoshi.data.dto.Movie
 
 data class SearchResult(
-    val search: List<Search>
+    val movies: List<Movie>
 )
