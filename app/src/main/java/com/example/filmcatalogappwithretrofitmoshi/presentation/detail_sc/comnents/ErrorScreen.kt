@@ -50,6 +50,12 @@ fun ErrorScreen(
                     .padding(horizontal = 16.dp, vertical = 8.dp)
             )
             MySpacer(size = 16.dp)
+            Text(text = errorMsg,
+                fontFamily = FontFamily.Monospace,
+                fontSize = 16.sp,
+                modifier = Modifier
+                    .padding(horizontal = 8.dp)
+            )
         }
     }
 }
